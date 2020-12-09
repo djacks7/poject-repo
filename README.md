@@ -1,2 +1,2 @@
-# poject-repo
+# project-repo
 A script to 
