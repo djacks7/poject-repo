@@ -93,7 +93,7 @@ SSH into the control node and follow the steps below:
 - Copy the filebeat.yml and metricbeat.yml configuration files to /etc/ansible/files directory.
 - Update configuration files to include the IP address of the elk server under elasticsearch and kibana sections [line #1106 and #1806 for filebeat]
 - Update the hosts file [/etc/ansible/hosts] to include the Private IP address of the Elk server under group name [elk] and the Private IP addresses for Web 1 and Web 2 VMs under group name [webservers]
-- Run the playbook, and navigate to Elk server to check that the installation worked as expected. [use command 'docker ps']
+- Run the playbook, and navigate to Elk server to check that the installation worked as expected. [use command] 'docker ps'
 - Navigate to your browser to verify Kibana is receiving logs
  [use website http://IP-Address-to-Elk-Server:5601/app/kibana]
 
