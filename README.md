@@ -67,7 +67,7 @@ The playbook implements the following tasks:
 - Use the ‘apt’ module to install ‘docker.io’ and ‘pip3’ 
 - Use the ‘sysctl’ module to increase the memory on the server
 - Download and launch a ‘docker elk’ container using image ‘sebp/elk:761’ and establish the published ports – 5601,9200, and 5044
-- Before running this playbook ensure that the ‘host’ file (etc/ansible/hosts) is edited to have your Elk server IP under the group name ‘elk’ 
+- Before running this playbook ensure that the ‘host’ file [etc/ansible/hosts] is edited to have your Elk server IP under the group name ‘elk’ 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 https://github.com/djacks7/project-repo/blob/main/Diagrams/DockerPS.PNG (Diagram/dockerps.png)
@@ -93,7 +93,7 @@ SSH into the control node and follow the steps below:
 - Copy the filebeat.yml and metricbeat.yml configuration files to /etc/ansible/files directory.
 - Update configuration files to include the IP address of the elk server under elasticsearch and kibana sections [line #1106 and #1806 for filebeat]
 - Update the hosts file [/etc/ansible/hosts] to include the Private IP address of the Elk server under group name [elk] and the Private IP addresses for Web 1 and Web 2 VMs under group name [webservers]
-- Run the playbook, and navigate to Elk server to check that the installation worked as expected. [use command docker ps]
+- Run the playbook, and navigate to Elk server to check that the installation worked as expected. [use command 'docker ps']
 - Navigate to your browser to verify Kibana is receiving logs
  [use website http://IP-Address-to-Elk-Server:5601/app/kibana]
 
