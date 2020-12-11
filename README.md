@@ -63,7 +63,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - The main advantage of automating this configuration is the simplification of the deployment. Creation of playbook allowed for the servers to be deployed using only a few commands. 
 
 The playbook implements the following tasks:
-- Creation of a new VM in the LAN. Also, giving this new VM a Private and Public IP address, take note of both. The private IP address will be used to SSH into the server and the Public IP address will be used to access the date from the filebeat and metricbeat services that will be installed after running the playbooks through Kibana.  
+- Creation of a new VM in the Vitural Network. Also, giving this new VM a Private and Public IP address, take note of both. The private IP address will be used to SSH into the server and the Public IP address will be used to access the date from the filebeat and metricbeat services that will be installed after running the playbooks through Kibana.  
 - Use the ‘apt’ module to install ‘docker.io’ and ‘pip3’ 
 - Use the ‘sysctl’ module to increase the memory on the server
 - Download and launch a ‘docker elk’ container using image ‘sebp/elk:761’ and establish the published ports – 5601,9200, and 5044
